@@ -14,7 +14,7 @@
                 <ol>
                     <li>
                         <label for="firstname">Imię: </label>
-                        <input type="text" id="firstname" name="firstname" required minlength="2" maxlength="50" placeholder="" autofocus>
+                        <input type="text" id="firstname" name="firstname" required minlength="2" maxlength="50" placeholder="Wpisz imię" autofocus>
                     </li>
 
                     <li>
@@ -23,7 +23,7 @@
                     </li>
 
                     <li>
-                        <label for="email">Adres email:</label>
+                        <label for="email">Adres email: </label>
                         <input type="email" id="email" name="email" required multiple>
                     </li>
                     
@@ -38,10 +38,15 @@
                     </li>
 
                     <li>
-                        <span>Płeć: </span>
-                        <label><input type="radio" name="gender" value="kobieta"> Kobieta</label>
-                        <label><input type="radio" name="gender" value="mezczyzna"> Mężczyzna</label>
-                        <label><input type="radio" name="gender" value="inna"> Inna</label>
+                        <label>Płeć: </label>
+                        <input type="radio" id="kobieta" name="gender" value="kobieta">
+                        <label for="kobieta">Kobieta</label>
+                                            
+                        <input type="radio" id="mezczyzna" name="gender" value="mezczyzna">
+                        <label for="mezczyzna">Mężczyzna</label>
+                                            
+                        <input type="radio" id="inna" name="gender" value="inna">
+                        <label for="inna">Inna</label>
                     </li>
 
                     <li>
@@ -55,13 +60,13 @@
                 <legend>Adres</legend>
                 
                 <label for="street">Ulica i numer: </label>
-                <input type="text" id="street" required>
+                <input type="text" id="street" name="street" required>
                 
                 <label for="zip_code">Kod pocztowy: </label>
-                <input type="text" id="zip_code" pattern="[0-9]{2}-[0-9]{3}" placeholder="00-000">
+                <input type="text" id="zip_code" name="zip_code" pattern="[0-9]{2}-[0-9]{3}" placeholder="00-000">
 
                 <label for="city_choice">Miasto: </label>
-                <input id="city_choice" list="cities">
+                <input id="city_choice" name="city_choice" list="cities">
                 <datalist id="cities">
                     <option value="Gdańsk"></option>
                     <option value="Warszawa"></option>
@@ -71,7 +76,7 @@
                     <option value="Kraków"></option>
                 </datalist>
 
-                <label for="countries"></label>
+                <label for="countries">Kraj: </label>
                 <select name="countries" id="countries" required>
                     <optgroup label="Europa: ">
                         <option value="Polska" selected>Polska</option>
@@ -82,12 +87,66 @@
 
                     <optgroup label="Azja: ">
                         <option value="Chiny">Chiny</option>
-                        <option value="Korea">Korea</option>
+                        <option value="Korea Południowa">Korea Południowa</option>
                         <option value="Thailandia">Thailandia</option>
                         <option value="Taiwan">Taiwan</option>
                     </optgroup>
                 </select>
             </fieldset>
+
+            <fieldset>
+                <legend>Preferencje czytelnicze</legend>
+
+                <label>Gatunki literackie: </label>
+                <input type="checkbox" id="fantasy" name="genres" value="fantasy">
+
+                <label for="fantasy">Fantasy</label>
+                <input type="checkbox" id="scifi" name="genres" value="scifi">
+
+                <label for="scifi">Sci-Fi</label>
+                <input type="checkbox" id="kryminal" name="genres" value="kryminal">
+
+                <label for="kryminal">Kryminał</label>
+                <input type="checkbox" id="romans" name="genres" value="romans">
+
+                <label for="romans">Romans</label>
+                <input type="checkbox" id="biografia" name="genres" value="biografia">
+
+                <label for="biografia">Biografia</label>
+                <input type="checkbox" id="horror" name="genres" value="horror">
+
+                <label for="horror">Horror</label>
+                <label for="books_month">Liczba wypożyczanych książek miesięcznie: </label>
+                <input type="number" id="books_month" name="books_month" min="1" max="20" step="1" value="3">
+
+                <label for="visit_time">Preferowana pora odwiedzin: </label>
+                <input type="time" id="visit_time" name="visit_time" min="07:00" max="22:00">
+
+                <label for="aktywnosc">Aktywność czytelnicza: </label>
+                <input type="range" id="aktywnosc" name="aktywnosc" min="0" max="10" step="1" value="5">
+                <output for="aktywnosc">5</output>
+
+                <label for="cover_color">Ulubiony kolor okładki: </label>
+                <input type="color" id="cover_color" name="cover_color" value="#3498db">
+
+                <label for="profile_link">Link do profilu czytelnika: </label>
+                <input type="url" id="profile_link" name="profile_link" placeholder="https://">
+
+                <label for="legitymacja">Wgranie zdjęcia legitymacyjnego: </label>
+                <input type="file" id="legitymacja" name="legitymacja" accept="image/png, image/jpeg">
+
+                <label for="komentarz">Komentarz / uwagi: </label>
+                <textarea id="komentarz" name="komentarz" rows="5" cols="50" maxlength="500" placeholder="Wpisz dodatkowe uwagi..."></textarea>
+            </fieldset>
+
+            <label for="profil_meter">Wypełnienie profilu: </label>
+            <meter id="profil_meter" value="0.4" min="0" max="1" low="0.3" high="0.7" optimum="0.9"></meter>
+
+            <label for="weryfikacja_progress">Postęp weryfikacji konta: </label>
+            <progress id="weryfikacja_progress" value="25" max="100"></progress>
+
+            <button type="submit">Zarejestruj się</button>
+            <button type="reset">Wyczyść formularz</button>
         </form>
     </body>
 </html>
