@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4f8; 
+}
+
+header {
+    background-color: #1a3a5c;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5), 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+header p {
+    color: #c8d8e8;
+    font-style: italic
+}
+
+.info {
+    font-style: italic;
+    color: #555555;
+    text-align: center;
+}
+
+fieldset {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+fieldset p {
+    word-spacing: 2px;
+}
+
+legend {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#dane_osobowe {
+    background-color: hsl(200, 50%, 95%);
+}
+
+#dane_osobowe legend {
+    color: hsl(200, 70%, 40%);
+}
+
+#adres {
+    background-color: hsl(60, 30%, 95%);
+}
+
+#adres legend {
+    color: hsl(60, 50%, 30%);
+    font-style: italic;
+}
+
+#preferencje {
+    background-color: hsl(120, 30%, 95%);
+}
+
+#preferencje legend {
+    font-style: italic;
+    text-transform: uppercase;
+    color: hsl(120, 60%, 30%);
+}
+
+label {
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+fieldset label {
+    color: #333333
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    font-family: inherit;
+}
+
+button[type='submit'] {
+    background-color: #1a3a5c;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type='reset'] {
+    background-color: #888888;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #c8d8e8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
