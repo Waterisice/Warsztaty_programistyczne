@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Portal sportowy">
+        <meta name="author" content="Autor Portal">
+        <title>Portal sportowy</title>
+        <link rel="canonical">
+        <base href="/">
+        <noscript>Twoja przeglądarka nie obsługuje javascript</noscript>
+    </head>
+    <body>
+        <header id="top">
+            <h1>Portal <abbr title="Polska liga piłkarska">PLP</abbr></h1>
+
+            <nav>
+                <ul>
+                    <li>Aktualności
+                        <ul>
+                            <li><a href="#">Najnowsze</a></li>
+                            <li><a href="#">Transfery</a></li>
+                        </ul>
+                    </li>
+                    <li>Tabele
+                        <ul>
+                            <li><a href="#">Tabela ligowa</a></li>
+                            <li><a href="#">Strzelcy</a></li>
+                        </ul>
+                    </li>
+                    <li>Więcej
+                        <ul>
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="https://www.fifa.com" target="_blank" rel="noopener">FIFA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <h2>Przegląd sezonu</h2>
+                <time datetime="2026-03-20">20 marca 2026</time>
+                <address>Autor: <a href="mailto:autor@example.com">autor@example.com</a></address>
+
+                <p>
+                    Lorem ipsum <mark>dolor</mark> sit amet <abbr>consectetur</abbr> adipisicing elit. Et, <cite>doloremque!</cite>Eligendi <strong>veniam</strong> perspiciatis quaerat tempore enim.
+                    Molestias <em>est</em> animi eligendi, adipisci <sub>dicta</sub>, deserunt explicabo eveniet, illum labore corporis alias ut distinctio ipsam nam ex unde maiores?
+                    Eius id <sup>repudiandae</sup> porro? Lorem <code>ipsum</code> dolor <kbd>sit</kbd> amet consectetur, <var>adipisicing</var> elit. Blanditiis, <samp>vitae!</samp>
+                </p>
+
+                <table border="1">
+                    <caption>Tabela ligowa</caption>
+                    <colgroup>
+                        <col bgcolor="lightgray">
+                        <col bgcolor="white">
+                        <col bgcolor="lightgray">
+                        <col bgcolor="white">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Pozycja</th>
+                            <th scope="col">Drużyna</th>
+                            <th scope="col" colspan="2">Statystyki</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Jagielonia</td>
+                            <td>30</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Lech</td>
+                            <td rowspan="2">28</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Raków</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Lechia</td>
+                            <td>25</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Zagłebie</td>
+                            <td>22</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Cracovia</td>
+                            <td colspan="2">10</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Dane aktualne</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <figure>
+                    <figcaption>Stadion główny ligi</figcaption>
+                    <picture>
+                        <source media="">
+                        <source media="(min-width:800px)" srcset="stadion.jpg">
+                        <source media="(min-width:400px)" srcset="stadion_maly.jpg">
+                        <img src="stadion.jpg" alt="Stadion">
+                    </picture>
+                </figure>
+
+                <figure>
+                    <figcaption>Najlepsze akcje</figcaption>
+                    <video controls preload="metadata" poster="plakat.jpg">
+                        <source src="film.mp4" type="video/mp4">
+                        <source src="film.webm" type="video/webm">
+                        <track kind="subtitles" srclang="pl" default>
+                        Twoja przeglądarka nie obsługuje wideo.
+                    </video>
+                </figure>
+
+                <figure>
+                    <figcaption>Hymn ligi</figcaption>
+                    <audio controls>
+                        <source src="audio.mp3" type="audio/mpeg">
+                        <source src="audio.wav" type="audio/wav">
+                        Twoja przeglądarka nie obsługuje audio.
+                    </audio>
+                </figure>
+
+                <details>
+                    <summary>Statystyki zawodnika</summary>
+                    <dl>
+                        <dt>Gole</dt><dd>10</dd>
+                        <dt>Asysty</dt><dd>5</dd>
+                    </dl>
+                </details>
+
+                <details>
+                    <summary>Statystyki drużyny</summary>
+                    <dl>
+                        <dt>Zwycięstwa</dt><dd>12</dd>
+                        <dt>Remisy</dt><dd>3</dd>
+                    </dl>
+                </details>
+
+                <details>
+                    <summary>Informacje dodatkowe</summary>
+                    <dl>
+                        <dt>Stadion</dt><dd>Narodowy</dd>
+                        <dt>Miasto</dt><dd>Warszawa</dd>
+                    </dl>
+                </details>
+
+                <img src="mapa.jpg" usemap="#mapa" alt="Mapa">
+                <map name="mapa">
+                    <area shape="rect" coords="0,0,100,100" href="#">
+                    <area shape="circle" coords="200,200,50" href="#">
+                    <area shape="poly" coords="300,300,350,350,300,400" href="#">
+                </map>
+
+            </article>
+
+            <aside>
+                <dl>
+                    <dt><abbr title="Bramki">G</abbr></dt>
+                    <dd>Liczba goli</dd>
+
+                    <dt>Punkty</dt>
+                    <dd>
+                        System punktów
+                        <dl>
+                            <dt>Wygrana</dt><dd>3</dd>
+                            <dt>Remis</dt><dd>1</dd>
+                        </dl>
+                    </dd>
+
+                    <dt>Mecze</dt><dd>Rozegrane</dd>
+                    <dt>Forma</dt><dd>Ostatnie wyniki</dd>
+                    <dt>Kibice</dt><dd>Frekwencja</dd>
+                    <dt>Ranking</dt><dd>Pozycja</dd>
+                </dl>
+
+                <iframe src="https://example.com" title="Tabela" width="300" height="200" loading="lazy"></iframe>
+
+                <ol>
+                    <li>Drużyny
+                        <ul>
+                            <li>Legia</li>
+                            <li>Lech</li>
+                        </ul>
+                    </li>
+                </ol>
+            </aside>
+
+        </main>
+
+        <footer>
+            <address>
+                <a href="mailto:kontakt@example.com">kontakt@example.com</a><br>
+                <a href="tel:123456789">123456789</a>
+            </address>
+
+            <small>
+                &copy;<time datetime="2026">2026</time>
+            </small>
+
+            <br>
+            <a href="#top">Powrót na górę</a>
+        </footer>
+
+    </body>
+</html>
