@@ -15,9 +15,9 @@
         </header>
         <nav>
             <ol>
-                <li><a href="#">Strona główna</a></li>
-                <li><a href="#">Biblioteka Akademicka</a></li>
-                <li><a href="#">Rejestracja czytelnika</a></li>
+                <li id="link1"><a href="#">Strona główna</a></li>
+                <li id="link2"><a href="#">Biblioteka Akademicka</a></li>
+                <li id="link3"><a href="#">Rejestracja czytelnika</a></li>
             </ol>
         </nav>
         <main>
@@ -27,13 +27,13 @@
                 <fieldset id="dane_osobowe">
                     <legend>Dane osobowe</legend>
                     <label for="firstname">Imię: </label><span class="required">*</span>
-                    <input type="text" id="firstname" name="firstname" required minlength="2" maxlength="50" placeholder="Wpisz imię" autofocus>
+                    <input class="required-field" type="text" id="firstname" name="firstname" required minlength="2" maxlength="50" placeholder="Wpisz imię" autofocus>
 
                     <label for="lastname">Nazwisko: </label><span class="required">*</span>
-                    <input type="text" id="lastname" name="lastname" required maxlength="60">
+                    <input class="required-field" type="text" id="lastname" name="lastname" required maxlength="60">
 
                     <label for="email">Adres email: </label><span class="required">*</span>
-                    <input type="email" id="email" name="email" required multiple>
+                    <input class="required-field" type="email" id="email" name="email" required multiple>
 
                     <label for="phone">Numer telefonu: </label>
                     <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" placeholder="123456789">
@@ -59,7 +59,7 @@
                     <legend>Adres</legend>
                     
                     <label for="street">Ulica i numer: </label>
-                    <input type="text" id="street" name="street" required>
+                    <input class="required-field" type="text" id="street" name="street" required>
                     
                     <label for="zip_code">Kod pocztowy: </label>
                     <input type="text" id="zip_code" name="zip_code" pattern="[0-9]{2}-[0-9]{3}" placeholder="00-000">
@@ -72,6 +72,14 @@
                         <option value="Białystok"></option>
                         <option value="Zakopane"></option>
                         <option value="Poznań"></option>
+                        <option value="Kraków"></option>
+                    </datalist>
+
+                    <label for="countries">Kraj: </label>
+                    <select class="required-field" name="countries" id="countries" required>
+                        <optgroup label="Europa: ">
+                            <option value="Polska" selected>Polska</option>
+                            <option value="Szwecja">Szwecja</option>
                             <option value="Findlandia">Findlandia</option>
                             <option value="Austria">Austria</option>
                         </optgroup>
