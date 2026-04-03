@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Menedżer zadań</h1>
+        </header>
+        <aside>
+            <form>
+                <label for="title">Tytuł zadania</label>
+                <input id="title" type="text" required>
+                
+                <label for="category">Kategoria</label>
+                <select id="category" required>
+                    <option>Praca</option>
+                    <option>Dom</option>
+                    <option>Nauka</option>
+                    <option>Zdrowie</option>
+                    <option>Inne</option>
+                </select>
+                
+                <label for="priority">Priorytet</label>
+                <select id="priority" required>
+                    <option>niski</option>
+                    <option>średni</option>
+                    <option>wysoki</option>
+                </select>
+                
+                <label for="date">Data wykonania</label>
+                <input id="date" type="date" required>
+                
+                <label for="description">Opis</label>
+                <textarea id="description"></textarea>
+                
+                <label for="status">Status</label>
+                <select id="status" required>
+                    <option>do zrobienia</option>
+                    <option>w trakcie</option>
+                    <option>zakończone</option>
+                </select>
+                
+                <button type="submit">Dodaj zadanie</button>
+            </form>
+        </aside>
+        <main>
+            <div class="stats">
+                <div>Wszystkie: 6</div>
+                <div>Do zrobienia: 3</div>
+                <div>W trakcie: 2</div>
+                <div>Zakończone: 1</div>
+            </div>
+            <div class="sort">
+                <button class="active">Tytuł ↑</button>
+                <button>Priorytet</button>
+                <button>Data</button>
+                <button>Kategoria</button>
+            </div>
+            
+            <div class="tasks">
+                <div class="task-card high">
+                    <div class="priority-badge">wysoki</div>
+                    <h3>Zadanie 1</h3>
+                    <p>Kategoria: Praca</p>
+                    <p>Data: 2023-10-01</p>
+                    <p>Opis: Opis zadania 1</p>
+                    <span class="status-badge todo">do zrobienia</span>
+                </div>
+                <div class="task-card medium">
+                    <div class="priority-badge">średni</div>
+                    <h3>Zadanie 2</h3>
+                    <p>Kategoria: Dom</p>
+                    <p>Data: 2023-10-02</p>
+                    <p>Opis: Opis zadania 2</p>
+                    <span class="status-badge in-progress">w trakcie</span>
+                </div>
+                <div class="task-card low">
+                    <div class="priority-badge">niski</div>
+                    <h3>Zadanie 3</h3>
+                    <p>Kategoria: Nauka</p>
+                    <p>Data: 2023-10-03</p>
+                    <p>Opis: Opis zadania 3</p>
+                    <span class="status-badge done">zakończone</span>
+                </div>
+                <div class="task-card high">
+                    <div class="priority-badge">wysoki</div>
+                    <h3>Zadanie 4</h3>
+                    <p>Kategoria: Zdrowie</p>
+                    <p>Data: 2023-10-04</p>
+                    <p>Opis: Opis zadania 4</p>
+                    <span class="status-badge todo">do zrobienia</span>
+                </div>
+                <div class="task-card medium">
+                    <div class="priority-badge">średni</div>
+                    <h3>Zadanie 5</h3>
+                    <p>Kategoria: Inne</p>
+                    <p>Data: 2023-10-05</p>
+                    <p>Opis: Opis zadania 5</p>
+                    <span class="status-badge in-progress">w trakcie</span>
+                </div>
+                <div class="task-card low">
+                    <div class="priority-badge">niski</div>
+                    <h3>Zadanie 6</h3>
+                    <p>Kategoria: Praca</p>
+                    <p>Data: 2023-10-06</p>
+                    <p>Opis: Opis zadania 6</p>
+                    <span class="status-badge done">zakończone</span>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

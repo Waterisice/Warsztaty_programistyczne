@@ -1,0 +1,87 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 10;
+}
+
+aside {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 300px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+
+main {
+    margin-left: 300px;
+    margin-top: 60px;
+}
+
+input, select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.stats div {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+}
+
+.sort button {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    background-color: #fff;
+}
+
+.sort .active {
+    background-color: #accdd3;
+}
+
+.task-card {
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.high {
+    background-color: #fde8e8;
+}
+
+.medium {
+    background-color: #fef9e7;
+}
+
+.low {
+    background-color: #eafaf1;
+}
+
+.priority-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.todo {
+    background-color: #e82121;
+}
+
+.in-progress {
+    background-color: #f9d357;
+}
+
+.done {
+    background-color: #3bfd68;
+}
