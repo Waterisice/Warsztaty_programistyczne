@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Menedżer zadań</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Menedżer Zadań</h1>
+                <nav>
+                    <a href="#">Wszystkie</a>
+                    <a href="#">Do zrobienia</a>
+                    <a href="#">W trakcie</a>
+                    <a href="#" class="active">Zakończone</a>
+                </nav>
+            </header>
+
+            <aside>
+                <form>
+                    <label for="title">Tytuł zadania</label>
+                    <input id="title" type="text">
+
+                    <label for="category">Kategoria</label>
+                    <select id="category">
+                        <option>Praca</option>
+                        <option>Dom</option>
+                        <option>Nauka</option>
+                        <option>Zdrowie</option>
+                        <option>Inne</option>
+                    </select>
+
+                    <label for="priority">Priorytet</label>
+                    <select id="priority">
+                        <option>niski</option>
+                        <option>średni</option>
+                        <option>wysoki</option>
+                    </select>
+
+                    <label for="date">Data</label>
+                    <input id="date" type="date">
+
+                    <label for="description">Opis</label>
+                    <textarea id="description"></textarea>
+
+                    <label for="status">Status</label>
+                    <select id="status">
+                        <option>do zrobienia</option>
+                        <option>w trakcie</option>
+                        <option>zakończone</option>
+                    </select>
+
+                    <button>Dodaj zadanie</button>
+                </form>
+            </aside>
+
+            <main>
+
+                <section class="today">
+                    <div>
+                        <h2>Wdrożenie systemu logowania</h2>
+                        <p>Kategoria: Praca</p>
+                        <p>Opis zadania testowego...</p>
+                    </div>
+                    <div>
+                        <p>Termin: 2026-04-10</p>
+                        <span class="priority high">wysoki</span>
+                        <span class="status progress">w trakcie</span>
+                    </div>
+                </section>
+
+                <div class="stats">
+                    <div>8<br>Wszystkie</div>
+                    <div>3<br>Do zrobienia</div>
+                    <div>3<br>W trakcie</div>
+                    <div>2<br>Zakończone</div>
+                </div>
+
+                <div class="sort">
+                    <span>Sortuj:</span>
+                    <button class="active">Tytuł</button>
+                    <button>Priorytet</button>
+                    <button>Data</button>
+                    <button>Kategoria</button>
+                    <button>Status</button>
+                </div>
+
+                <div class="tasks">
+
+                    <div class="task high span2">
+                        <div class="top">
+                            <h3>Zadanie 1</h3>
+                            <span class="priority high">wysoki</span>
+                        </div>
+                        <p>Kategoria: Praca</p>
+                        <p class="desc">Opis zadania...</p>
+                        <div class="bottom">
+                            <span class="status progress">w trakcie</span>
+                            <span>2026-04-10</span>
+                        </div>
+                    </div>
+
+                    <div class="task high">
+                        <div class="top">
+                            <h3>Zadanie 2</h3>
+                            <span class="priority high">wysoki</span>
+                        </div>
+                        <p>Kategoria: Dom</p>
+                        <p class="desc">Opis...</p>
+                        <div class="bottom">
+                            <span class="status todo">do zrobienia</span>
+                            <span>2026-04-05</span>
+                        </div>
+                    </div>
+
+                    <div class="task medium">
+                        <div class="top">
+                            <h3>Zadanie 3</h3>
+                            <span class="priority medium">średni</span>
+                        </div>
+                        <p>Kategoria: Nauka</p>
+                        <p class="desc">Opis...</p>
+                        <div class="bottom">
+                            <span class="status done">zakończone</span>
+                            <span>2026-04-01</span>
+                        </div>
+                    </div>
+
+                    <div class="task medium">
+                        <div class="top">
+                            <h3>Zadanie 2</h3>
+                            <span class="priority medium">średni</span>
+                        </div>
+                        <p>Kategoria: Dom</p>
+                        <p class="desc">Opis...</p>
+                        <div class="bottom">
+                            <span class="status todo">do zrobienia</span>
+                            <span>2026-04-05</span>
+                        </div>
+                    </div>
+
+                    <div class="task low">
+                        <div class="top">
+                            <h3>Zadanie 3</h3>
+                            <span class="priority low">niski</span>
+                        </div>
+                        <p>Kategoria: Nauka</p>
+                        <p class="desc">Opis...</p>
+                        <div class="bottom">
+                            <span class="status done">zakończone</span>
+                            <span>2026-04-01</span>
+                        </div>
+                    </div>
+                    
+                    <div class="task low">
+                        <div class="top">
+                            <h3>Zadanie 3</h3>
+                            <span class="priority low">niski</span>
+                        </div>
+                        <p>Kategoria: Nauka</p>
+                        <p class="desc">Opis...</p>
+                        <div class="bottom">
+                            <span class="status done">zakończone</span>
+                            <span>2026-04-01</span>
+                        </div>
+                    </div>
+
+                    <div class="task high span-row">
+                        <div class="top">
+                            <h3>Duże zadanie</h3>
+                            <span class="priority high">wysoki</span>
+                        </div>
+                        <p>Kategoria: Praca</p>
+                        <p class="desc">Dłuższy opis zadania...</p>
+                        <div class="bottom">
+                            <span class="status progress">w trakcie</span>
+                            <span>2026-04-18</span>
+                        </div>
+                    </div>
+
+                    <div class="task low">
+                        <div class="top">
+                            <h3>Zadanie 2</h3>
+                            <span class="priority low">niski</span>
+                        </div>
+                        <p>Kategoria: Dom</p>
+                        <p class="desc">Opis...</p>
+                        <div class="bottom">
+                            <span class="status todo">do zrobienia</span>
+                            <span>2026-04-05</span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </main>
+
+        </div>
+    </body>
+</html>
